@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Tile - tile.js</title>
+	<meta name="author" content="Charles Gomes" />
+	<meta name="description" content="Tille demo." />
+	<meta name="keywords"  content="tile js" />
+	<meta name="Resource-type" content="Document" />
+
+<style>	
+	canvas{
+		background-color: #ececec;
+		height: 500px;
+		width: 500px;
+		padding: 100px 0 0 0;
+	}
+
+</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<!--my jquery library-- Tile -->
+	<script type="text/javascript" src="js/tile.js"></script>
+	
+	<script>
+	// How to use Tiles
+	//initializing Tiles
+	$(document).ready(function() {
+			
+			// Put multiple tiles in canvas
+			$('#tilefloor').tile({
+				numberOfTiles: 10				
+			});
+			
+		});
+		
+	
+	</script>
+	
+	
+</head>
+<body>
+
+	<div class="section" id="section1">
+		<canvas id="tilefloor" width ="800" height="800" ></canvas>
+			<p>
+				Open Source Contribution<br/>
+			</p>
+		
+	</div>
+
+</body>
+</html>
